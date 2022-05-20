@@ -1,0 +1,24 @@
+.about-us {
+    width: 80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    
+}
+.about-col-container {
+    padding: 30px 2px;
+}
+.about-col-container img {
+    width: 100%;
+}
+.about-col-container h1 {
+    padding-top: 0;
+}
+.about-col-container p {
+    padding: 15px 0 25px;
+}
+.red-btn {
+    border: 1px solid #f44336;
+    background: transparent;
+    color: #f44336;
+}

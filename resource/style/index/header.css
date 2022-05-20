@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300&family=Raleway:wght@500&family=Roboto:wght@100&display=swap');
+;
+body {
+    font-family: 'Raleway', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(115deg,
+            rgba(4, 9, 30, 0.7),
+            rgba(4, 9, 30, 0.7)),
+        url(../../images/bg.jpg);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 6%;
+}
+
+
+nav img {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.nav-links,
+.nav-link-tablet-desktop {
+    flex: 1;
+    text-align: right;
+    display: block;
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.nav-links ul li,
+.nav-link-tablet-desktop ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 10px;
+    position: relative;
+    /* transition: 0.5s; */
+}
+
+.nav-links ul li a,
+.nav-link-tablet-desktop ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.nav-links ul li a:hover,
+.nav-link-tablet-desktop ul li a:hover {
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: white;
+}
+
+.textBoxLink {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+.textBoxLink:hover {
+    color: white;
+    border: 1px solid #b94039;
+    background-color: #b94039;
+}
+
+nav .fa {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    .nav-link-tablet-desktop {
+        display: none;
+    }
+
+    .text-box h1 {
+        font-size: 30px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        /* right: -200px; */
+        background-color: gray;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 50%;
+        z-index: 10;
+        text-align: left;
+        padding: 10px 0 0 10px;
+        overflow: hidden;
+    }
+
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+}
+
+#closeNavLinks {
+    width: fit-content;
+}
+
+@media (min-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+}

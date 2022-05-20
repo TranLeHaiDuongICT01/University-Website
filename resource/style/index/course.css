@@ -1,0 +1,49 @@
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.course h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.course p {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.course-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
+}
+.course-col-container {
+    height: 100%;
+    padding: 10px;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    transition: 0.5s;
+}
+
+.course-col h1 {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+.course-col p {
+    font-size: 13px;
+    color: rgb(99, 95, 95);
+}
+
+.course-col-container:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}

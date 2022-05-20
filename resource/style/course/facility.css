@@ -1,0 +1,21 @@
+.facility {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.facility p {
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 10px;
+}
+
+.facility img {
+    width: 100%;
+}
+.facility-col {
+    margin-bottom: 20px;
+}
